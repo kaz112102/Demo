@@ -1,0 +1,13 @@
+CREATE TABLE `definite_time` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `imeis` text NOT NULL,
+  `create_time` datetime NOT NULL,
+  `space` int(11) NOT NULL,
+  `end_time` datetime NOT NULL,
+  `delay_second` int(11) NOT NULL,
+  `account_id` int(11) NOT NULL,
+  `main_id` varchar(16) NOT NULL,
+  `tasks_json` text NOT NULL,
+  `platform` int(2) unsigned DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=181 DEFAULT CHARSET=utf8;
